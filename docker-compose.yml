@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  api:
+    build: .
+    container_name: posts
+    image: posts
+    volumes:
+      - ../posts:/opt/code
+    ports:
+      - "8080:8080"
